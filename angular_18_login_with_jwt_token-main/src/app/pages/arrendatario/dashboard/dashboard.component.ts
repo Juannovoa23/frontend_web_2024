@@ -8,7 +8,7 @@ import { Constant } from '../../../conststnt';
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [NgIf,NgFor],
+  imports: [NgIf, NgFor],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
@@ -18,6 +18,7 @@ export class DashboardComponent implements OnInit {
   decryptedName: string = '';
   dropdownOpen: boolean = false;
   fincaList: any[] = [];
+fincas: any;
 
   // Inyecta el servicio y el router
   constructor(private readonly router: Router, ) {}
@@ -50,14 +51,17 @@ export class DashboardComponent implements OnInit {
     this.dropdownOpen = true;
   }
 
+
   hideDropdown() {
     this.dropdownOpen = false;
   }
 
-  // Método para reservar una finca
-  reservar(finca: any) {
-    // Navegar a la página de reserva y enviar la finca seleccionada
-   this.router.navigate(['/reserva'], { state: { finca } });
-
+  redirigirReserva(finca: any): void {
+    // Lógica de redirección usando el nombre de la finca (puedes cambiar según necesites)
+    this.router.navigate(['/reserva'], { queryParams: { finca: finca.nombre } });
   }
+
+
+  // Método para reservar una finca
+
 }
