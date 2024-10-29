@@ -1,0 +1,13 @@
+<div class="arboles-lista">
+  <h3>Lista de Árboles</h3>
+  <div *ngFor="let arbol of arboles">
+    <button (click)="agregarAFavoritos(arbol)">{{ arbol }}</button>
+  </div>
+</div>
+
+<div class="favoritos-lista">
+  <h3>Favoritos</h3>
+  <div *ngFor="let favorito of favoritos">
+    <p>{{ favorito }}</p>
+  </div>
+</div>

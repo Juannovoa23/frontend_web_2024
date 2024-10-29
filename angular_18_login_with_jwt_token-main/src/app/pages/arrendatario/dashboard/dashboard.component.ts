@@ -58,6 +58,7 @@ export class DashboardComponent implements OnInit {
   // Método para reservar una finca
   reservar(finca: any) {
     // Navegar a la página de reserva y enviar la finca seleccionada
-    this.router.navigate(['/reserva'], { state: { finca } });
+   this.router.navigate(['/reserva'], { state: { finca } });
+
   }
 }
