@@ -23,13 +23,7 @@ export class ReservaComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Obtener la finca desde la navegación
-    const navigation = this.router.getCurrentNavigation();
-    if (navigation?.extras.state) {
-      this.finca = navigation.extras.state['finca']; // Acceder a la finca correctamente
-      // También puedes guardar la finca en el servicio si es necesario
-      this.fincaService.setFinca(this.finca);
-    }
+
   }
 
 

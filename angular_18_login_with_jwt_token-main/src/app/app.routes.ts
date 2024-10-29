@@ -10,6 +10,7 @@ import { PerfilArrendatarioComponent } from './pages//perfiles/perfil-arrendatar
 import { PerfilArrendadorComponent } from './pages//perfiles/perfil-arrendador/perfil-arrendador.component'; // Nueva importación
 import { AyudaComponent } from './pages/arrendatario/ayuda/ayuda.component';
 import { ReservaComponent } from './pages/arrendatario/reservar/reservar.component';
+import { EditarPerfilComponent } from './pages/arrendatario/editar-perfil/editar-perfil.component';
 
 
 
@@ -26,6 +27,10 @@ export const routes: Routes = [
   {
     path: 'reserva',
     component: ReservaComponent
+  },
+  {
+    path: 'editar-perfil',
+    component: EditarPerfilComponent
   },
   {
     path: 'ayuda',
