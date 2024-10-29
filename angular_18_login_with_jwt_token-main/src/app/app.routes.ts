@@ -1,10 +1,10 @@
 import { Routes } from '@angular/router';
 import { ArrendadorComponent } from './pages/arrendador/arrendador.component';
+import { BuscarComponent } from './pages/buscar/buscar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LayoutComponent } from './pages/layout/layout.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/registerpage/register-page.component'; // Importa RegisterComponent
-
 export const routes: Routes = [
   {
     path: '',
@@ -14,6 +14,10 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'buscar',
+    component: BuscarComponent
   },
   {
     path: 'arrendador',
