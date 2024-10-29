@@ -1,0 +1,14 @@
+<div class="help-container">
+  <h2>Foro de Ayuda</h2>
+
+  <form (ngSubmit)="addComment()">
+    <textarea [(ngModel)]="newComment" name="comment" placeholder="Escribe tu experiencia..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="comments-list">
+    <div *ngFor="let comment of comments" class="comment">
+      <p>{{ comment }}</p>
+    </div>
+  </div>
+</div>
