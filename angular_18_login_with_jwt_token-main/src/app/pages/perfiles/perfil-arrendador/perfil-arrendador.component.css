@@ -1,0 +1,92 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid #34a853;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.profile-role {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.edit-profile-btn {
+  margin-top: 10px;
+}
+
+.profile-details h3,
+.profile-properties h3 {
+  color: #34a853;
+  margin-top: 20px;
+}
+
+.profile-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.profile-details li {
+  margin-bottom: 10px;
+}
+
+.profile-properties {
+  margin-top: 20px;
+}
+
+.properties-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.property-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 250px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.property-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.property-details {
+  padding: 10px;
+}
+
+.property-name {
+  color: #333;
+  font-weight: bold;
+}
+
+.property-location {
+  color: #666;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
