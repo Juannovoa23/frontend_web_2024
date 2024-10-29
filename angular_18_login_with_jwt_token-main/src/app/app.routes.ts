@@ -32,6 +32,10 @@ export const routes: Routes = [
     component: ArrendadorComponent
   },
   {
+    path: 'arrendatario',
+    component: ArrendadorComponent
+  },
+  {
     path: 'registerpage',
     component: RegisterComponent
   },

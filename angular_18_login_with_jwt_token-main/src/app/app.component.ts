@@ -7,10 +7,9 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrige aquí
 })
 export class AppComponent {
   title = 'angular_18_login_with_jwt_token';
 }
-
 
