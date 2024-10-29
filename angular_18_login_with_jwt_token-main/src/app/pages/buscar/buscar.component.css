@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #007bff; /* Color del fondo del menú */
+  padding: 10px 20px; /* Espaciado interno */
+}
+
+.menu {
+  list-style: none; /* Sin viñetas */
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin padding */
+  display: flex; /* Menú en línea */
+}
+
+.menu > li {
+  position: relative; /* Para posicionar el submenu */
+  margin-right: 20px; /* Espacio entre elementos */
+}
+
+.menu a {
+  color: white; /* Color del texto */
+  text-decoration: none; /* Sin subrayado */
+  padding: 10px 15px; /* Espaciado interno */
+}
+
+.submenu {
+  display: none; /* Oculta el submenu por defecto */
+  position: absolute; /* Para superponerlo sobre otros elementos */
+  top: 100%; /* Posiciona el submenu debajo del menú principal */
+  left: 0; /* Alinea a la izquierda */
+  background-color: #007bff; /* Color del fondo del submenu */
+  list-style: none; /* Sin viñetas */
+  margin: 0; /* Sin margen */
+  padding: 0; /* Sin padding */
+  border-radius: 5px; /* Bordes redondeados */
+  z-index: 1000; /* Asegura que esté encima de otros elementos */
+}
+
+.menu > li:hover .submenu {
+  display: block; /* Muestra el submenu al pasar el ratón */
+}
+
+.submenu li {
+  margin: 0; /* Sin margen en el submenu */
+}
+
+.submenu a {
+  padding: 10px 15px; /* Espaciado interno */
+  display: block; /* Hace que el área clicable sea más grande */
+}
+
+.submenu a:hover {
+  background-color: #0056b3; /* Color al pasar el ratón sobre las opciones del submenu */
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+  selector: 'app-arrendador',
   templateUrl: './arrendador.component.html',
   styleUrls: ['./arrendador.component.css']
 })

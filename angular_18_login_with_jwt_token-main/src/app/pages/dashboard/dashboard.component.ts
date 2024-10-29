@@ -9,20 +9,19 @@ import { Constant } from '../../conststnt';
   standalone: true,
   imports: [JsonPipe],
   templateUrl: './dashboard.component.html',
-  styleUrl: './dashboard.component.css'
+  styleUrls: ['./dashboard.component.css'] // Asegúrate de que sea styleUrls, no styleUrl
 })
 export class DashboardComponent implements OnInit {
-
   http = inject(HttpClient);
   userList: any[] = [];
   decryptedName: string = '';
+  dropdownOpen: boolean = false; // Propiedad para controlar el estado del menú desplegable
 
   ngOnInit(): void {
     this.getAllUser();
 
     // Desencriptar el nombre de usuario almacenado
     const uName = localStorage.getItem('uName');
-    debugger;
     if (uName != null) {
       this.decryptedName = this.decryptData(uName);
     }
@@ -36,9 +35,22 @@ export class DashboardComponent implements OnInit {
 
   // Obtener todos los usuarios
   getAllUser() {
-    debugger;
     this.http.get("https://freeapi.miniprojectideas.com/api/User/GetAllUsers").subscribe((res: any) => {
       this.userList = res.data;
     });
+  }
+
+  // Método para alternar el estado del menú desplegable
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen; // Alterna entre mostrar y ocultar el menú
+  }
+
+  // Métodos para mostrar y ocultar el menú (opcional)
+  showDropdown() {
+    this.dropdownOpen = true;
+  }
+
+  hideDropdown() {
+    this.dropdownOpen = false;
   }
 }
