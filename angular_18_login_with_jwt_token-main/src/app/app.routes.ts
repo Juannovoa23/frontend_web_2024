@@ -12,6 +12,7 @@ import { AyudaComponent } from './pages/arrendatario/ayuda/ayuda.component';
 import { ReservaComponent } from './pages/arrendatario/reservar/reservar.component';
 
 
+
 export const routes: Routes = [
   {
     path: '',
