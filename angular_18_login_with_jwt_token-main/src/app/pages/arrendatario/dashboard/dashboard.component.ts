@@ -3,8 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { Router } from '@angular/router'; // Importa Router
 import * as CryptoJS from 'crypto-js';
-import { Constant } from '../../conststnt';
-import { FincaService } from '../../services/finca.service';
+import { Constant } from '../../../conststnt';
 
 @Component({
   selector: 'app-dashboard',
@@ -21,7 +20,7 @@ export class DashboardComponent implements OnInit {
   fincaList: any[] = [];
 
   // Inyecta el servicio y el router
-  constructor(private readonly router: Router, private readonly fincaService: FincaService) {}
+  constructor(private readonly router: Router, ) {}
 
   ngOnInit(): void {
     this.getAllUser();
