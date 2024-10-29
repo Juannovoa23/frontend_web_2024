@@ -7,8 +7,12 @@ import { ArrendadorComponent } from './pages/arrendador/arrendador.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { FavoritosComponent } from './pages/favoritos/favoritos.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+import { ReservaComponent } from './pages/reservar/reservar.component';
+/*
+import { FavoritosComponent } from './pages/favoritos/favoritos.component';
+*/
+
 
 export const routes: Routes = [
   {
@@ -21,6 +25,10 @@ export const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'reserva',
+    component: ReservaComponent
+  },
+  {
     path: 'ayuda',
     component: AyudaComponent
   },
@@ -28,10 +36,10 @@ export const routes: Routes = [
     path: 'buscar',
     component: BuscarComponent
   },
-  { path: 'favoritos',
+  /*{ path: 'favoritos',
     component: FavoritosComponent
 
-  },
+  },*/
   {
     path: 'arrendador',
     component: ArrendadorComponent

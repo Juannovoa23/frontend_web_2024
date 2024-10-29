@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-sevfavoritos',
-  standalone: true,
-  imports: [],
-  templateUrl: './sevfavoritos.component.html',
-  styleUrl: './sevfavoritos.component.css'
+@Injectable({
+  providedIn: 'root'
 })
-export class SevfavoritosComponent {
+export class FavoritosService {
+  private favoritos: string[] = [];
 
+  agregarFavorito(favorito: string) {
+    this.favoritos.unshift(favorito);
+  }
+
+  obtenerFavoritos() {
+    return this.favoritos;
+  }
 }

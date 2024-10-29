@@ -1,6 +1,7 @@
-import { CommonModule } from '@angular/common';
+/*import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { FavoritosService } from '../services/sevfavoritos/sevfavoritos.component';
 
 @Component({
   selector: 'app-favoritos',
@@ -10,12 +11,13 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
 })
 export class FavoritosComponent {
-  arboles = ['Hacienda Napoles', 'Tranquilandia', 'Finca Los Rosales'];
+
+
   favoritos: string[] = [];
 
-  agregarAFavoritos(arbol: string) {
-    if (!this.favoritos.includes(arbol)) {
-      this.favoritos.unshift(arbol);
-    }
+  constructor(private favoritosService: FavoritosService) {}
+
+  ngOnInit(): void {
+    this.favoritos = this.favoritosService.obtenerFavoritos();
   }
-}
+}*/
