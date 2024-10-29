@@ -1,40 +1,17 @@
-/* Estilos generales */
-.botones-arboles {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+.arboles-lista, .favoritos-lista {
+  margin: 20px 0;
 }
 
 button {
-  padding: 10px 15px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px 12px;
   background-color: #4CAF50;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
 }
 
 button:hover {
   background-color: #45a049;
-}
-
-/* Estilos para la lista de favoritos */
-.lista-favoritos {
-  border-top: 1px solid #ccc;
-  margin-top: 20px;
-  padding-top: 10px;
-}
-
-.lista-favoritos h3 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.favorito-item {
-  padding: 10px;
-  background-color: #f1f1f1;
-  margin-top: 5px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
 }

@@ -3,11 +3,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import * as CryptoJS from 'crypto-js';
 import { Constant } from '../../conststnt';
+import { FavoritosComponent } from '../favoritos/favoritos.component';
+
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [JsonPipe],
+  imports: [JsonPipe, FavoritosComponent],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'] // Asegúrate de que sea styleUrls, no styleUrl
 })
