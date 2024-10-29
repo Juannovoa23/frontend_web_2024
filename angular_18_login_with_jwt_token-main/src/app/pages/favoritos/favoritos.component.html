@@ -1,13 +1,13 @@
-<div class="botones-arboles">
-  <!-- Botones de los árboles -->
-  <button *ngFor="let arbol of arboles" (click)="agregarAFavoritos(arbol)">
-    {{ arbol }}
-  </button>
+<div class="arboles-lista">
+  <h3>Lista de Árboles</h3>
+  <div *ngFor="let arbol of arboles">
+    <button (click)="agregarAFavoritos(arbol)">{{ arbol }}</button>
+  </div>
 </div>
 
-<div class="lista-favoritos">
+<div class="favoritos-lista">
   <h3>Favoritos</h3>
-  <div *ngFor="let favorito of favoritos" class="favorito-item">
-    {{ favorito }}
+  <div *ngFor="let favorito of favoritos">
+    <p>{{ favorito }}</p>
   </div>
 </div>

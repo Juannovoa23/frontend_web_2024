@@ -10,14 +10,12 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
 })
 export class FavoritosComponent {
-  // Lista de botones de "árbol"
   arboles = ['Hacienda Napoles', 'Tranquilandia', 'Finca Los Rosales'];
-
-  // Lista de favoritos que se duplican abajo
   favoritos: string[] = [];
 
-  // Función para agregar un árbol a la lista de favoritos, siempre en la primera posición
   agregarAFavoritos(arbol: string) {
-    this.favoritos.unshift(arbol);
+    if (!this.favoritos.includes(arbol)) {
+      this.favoritos.unshift(arbol);
+    }
   }
 }
