@@ -6,23 +6,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+        <div class="navbar-nav ms-auto">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">Favorites</a>
-        </li>
-        <div class="dropdown">
-          <button class="dropdown-toggle" (click)="toggleDropdown()">Menú</button>
-          <div class="dropdown-menu" *ngIf="dropdownOpen">
-            <a class="dropdown-item" href="#">Opción 1</a>
-            <a class="dropdown-item" href="#">Opción 2</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Opción 3</a>
-          </div>
+          <a class="nav-link" href="#">Reserva</a>
+          <a class="nav-link" href="#">Perfil</a>
+          <a class="nav-link" href="#">Ayuda</a>
+         <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
         </div>
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          <!--<a class="nav-link disabled" aria-disabled="false">Disabled</a>-->
         </li>
       </ul>
       <form class="d-flex" role="search">
