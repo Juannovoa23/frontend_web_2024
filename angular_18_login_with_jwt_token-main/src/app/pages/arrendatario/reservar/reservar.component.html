@@ -1,11 +1,15 @@
-<div class="reserva-container">
-  <h2>Reservar {{ finca?.nombre }}</h2>
-  <p>Descripción: {{ finca?.descripcion }}</p>
+<div class="reserva-page">
+  <div class="reserva-container">
+    <h2>Reservar {{ finca?.nombre }}</h2>
+    <p class="descripcion">Descripción: {{ finca?.descripcion }}</p>
 
-  <label for="dias">Número de días:</label>
-  <input type="number" id="dias" [(ngModel)]="dias" min="1" />
+    <div class="input-group">
+      <label for="dias">Número de días:</label>
+      <input type="number" id="dias" [(ngModel)]="dias" min="1" />
+    </div>
 
-  <p>Costo total: {{ calcularCosto(dias) }}$</p>
+    <p class="costo-total">Costo total: {{ calcularCosto(dias) }}$</p>
 
-  <button (click)="pagar()">Pagar</button>
+    <button class="btn-pagar" (click)="pagar()">Pagar</button>
+  </div>
 </div>

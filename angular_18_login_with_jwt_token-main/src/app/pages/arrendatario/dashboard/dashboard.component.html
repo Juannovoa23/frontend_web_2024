@@ -44,7 +44,7 @@
     <div class="card">
       <h3>Hacienda Nápoles</h3>
       <div class="dashboard-content">
-        <div class="card" *ngFor="let finca of fincas">
+        <div class="card" *ngFor="let finca of fincaList">
           <h3>{{ finca.nombre }}</h3>
           <p>{{ finca.descripcion }}</p>
           <button (click)="reservar(finca)">Reservar</button>
@@ -55,7 +55,7 @@
     <div class="card">
       <h3>Tranquilandia</h3>
       <div class="dashboard-content">
-        <div class="card" *ngFor="let finca of fincas">
+        <div class="card" *ngFor="let finca of fincaList">
           <h3>{{ finca.nombre }}</h3>
           <p>{{ finca.descripcion }}</p>
           <button (click)="reservar(finca)">Reservar</button>
@@ -74,7 +74,7 @@
     <div class="card">
       <h3>El Bizcocho</h3>
       <div class="dashboard-content">
-        <div class="card" *ngFor="let finca of fincas">
+        <div class="card" *ngFor="let finca of fincaList">
           <h3>{{ finca.nombre }}</h3>
           <p>{{ finca.descripcion }}</p>
           <button (click)="reservar(finca)">Reservar</button>
