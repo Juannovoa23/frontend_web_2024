@@ -12,7 +12,7 @@
 .dashboard-header {
   text-align: center;
   padding: 20px 0;
-  background-color:#7a76b7;
+  background-color:#1ba450;
   color: white;
   border-radius: 10px 10px 0 0;
 }
@@ -47,7 +47,7 @@
 .dashboard-footer {
   text-align: center;
   padding: 20px;
-  background-color:#7a76b7;
+  background-color:#1ba450;
   color: white;
   border-radius: 0 0 10px 10px;
 }
