@@ -3,11 +3,14 @@ import { ArrendadorComponent } from './pages/arrendador/arrendador.component';
 import { BuscarComponent } from './pages/buscar/buscar.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LayoutComponent } from './pages/layout/layout.component';
+
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/registerpage/register-page.component';
 import { PerfilArrendatarioComponent } from './pages//perfiles/perfil-arrendatario/perfil-arrendatario.component'; // Nueva importación
 import { PerfilArrendadorComponent } from './pages//perfiles/perfil-arrendador/perfil-arrendador.component'; // Nueva importación
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
+import { ReservaComponent } from './pages/reservar/reservar.component';
+
 
 export const routes: Routes = [
   {
@@ -20,6 +23,10 @@ export const routes: Routes = [
     component: LoginComponent
   },
   {
+    path: 'reserva',
+    component: ReservaComponent
+  },
+  {
     path: 'ayuda',
     component: AyudaComponent
   },
@@ -27,6 +34,7 @@ export const routes: Routes = [
     path: 'buscar',
     component: BuscarComponent
   },
+
   {
     path: 'arrendador',
     component: ArrendadorComponent
